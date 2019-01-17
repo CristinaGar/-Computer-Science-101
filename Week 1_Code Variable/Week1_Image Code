@@ -1,0 +1,20 @@
+Question 1 / Code Variable
+Change just one line of the code below so it produces the following output when run.
+
+xyz123
+xyz123 xyz123
+xyz123 xyz123 xyz123
+
+Solution
+x = "xyz123";
+print(x);
+print(x, x);
+print(x, x, x);
+
+Question 1 / Image Code
+Write code to set the pixel at (0, 0) to blue (i.e. blue value is 255, red and green are left at 0).
+image = new SimpleImage("x.png");
+
+image.setZoom(20);
+image.getPixel(0, 0).setBlue(255);
+print(image);
