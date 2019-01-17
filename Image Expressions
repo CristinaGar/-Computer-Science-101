@@ -1,0 +1,25 @@
+Question 1
+Write code to fix the 51020-poppy.png image which should show an orange California Poppy in the foreground (the California state flower!). The background is mostly green with some in the upper-right.
+
+image = new SimpleImage("51020-poppy.png");
+
+for (pixel: image) {
+  // Your code here
+  pixel.setRed(pixel.getRed() * 10);
+  pixel.setGreen(pixel.getGreen() * 5);
+  pixel.setBlue(pixel.getBlue() * 20);
+}
+print(image);
+
+Question 2
+Write code to fix the 51020-stop-sky.png image which should show a red stop sign front with a background of a light blue sky and green tree leaves.
+
+image = new SimpleImage("51020-stop-sky.png");
+
+for (pixel: image) {
+
+pixel.setRed(pixel.getRed()*20);
+pixel.setGreen(pixel.getGreen()*10);
+pixel.setBlue(pixel.getBlue()*5);
+}
+print(image);
