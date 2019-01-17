@@ -23,3 +23,16 @@ pixel.setGreen(pixel.getGreen()*10);
 pixel.setBlue(pixel.getBlue()*5);
 }
 print(image);
+
+Question 3
+Write code to fix the 51020-oranges.png image which should show a box of oranges. The box itself is dull gray. The sign on the box is black, with "organic" written in light orange, and the rest of the letters in white.
+image = new SimpleImage("51020-oranges.png");
+
+for (pixel: image) {
+
+pixel.setRed(pixel.getRed() * 20);
+pixel.setGreen(pixel.getGreen() * 5);
+pixel.setBlue(pixel.getBlue() * 10);
+  
+}
+print(image);
