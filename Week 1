@@ -11,7 +11,7 @@ print(x);
 print(x, x);
 print(x, x, x);
 
-Question 1 / Image Code
+Question 1  
 Write code to set the pixel at (0, 0) to blue (i.e. blue value is 255, red and green are left at 0).
 
 Solution
@@ -21,7 +21,7 @@ image.setZoom(20);
 image.getPixel(0, 0).setBlue(255);
 print(image);
 
-Question 2 / Image Code
+Question 2 
 Write code to set the pixel at (0, 0) to be violet (i.e. red and blue both 255, green left at 0).
 
 Solution
