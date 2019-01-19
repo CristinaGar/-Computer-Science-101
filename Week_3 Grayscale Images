@@ -1,0 +1,27 @@
+Question 1 
+Write code that for each pixel copies the red value over to be the green and blue value. The result will be to change the image to grayscale which will look better.
+image = new SimpleImage("golden-gate-red.jpg");
+
+for (pixel: image) {
+pixel.setRed(pixel.getRed());
+pixel.setGreen(pixel.getRed());
+pixel.setBlue(pixel.getRed());
+  
+}
+
+print(image);
+
+Question 2
+Write code to change the banana.jpg image to be grayscale. Reminder: here is the line used in the loop to compute the average of the red/green/blue values and store that value in a variable named "avg".
+
+avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  
+image = new SimpleImage("banana.jpg");
+
+for (pixel: image) {
+avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+pixel.setRed(avg);
+pixel.setGreen(avg);
+pixel.setBlue(avg);
+}
+print(image);
