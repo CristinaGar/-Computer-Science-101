@@ -1,0 +1,92 @@
+IMAGE LOGIC Q1
+image = new SimpleImage("fence-ivy.jpg");
+for (pixel: image) {
+avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+
+if (pixel.getGreen() > avg * 1){
+pixel.setRed(160);
+pixel.setGreen(0);
+pixel.setBlue(160);
+  }
+}
+print(image);
+
+IMAGE LOGIC Q2
+for (pixel: image) {
+avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+
+if (pixel.getBlue() > avg * 1.2){
+pixel.setRed(20);
+pixel.setGreen(20);
+pixel.setBlue(20);
+  }
+}
+
+print(image);
+
+IMAGE LOGIC Q3
+image = new SimpleImage("curb.jpg");
+
+for (pixel: image) {
+avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+
+if (pixel.getRed() > avg * 1.2){
+pixel.setRed(avg*0.5);
+pixel.setGreen(avg*0.5);
+pixel.setBlue(1.2 * avg);
+  }
+}
+
+IMAGE BLUESCREEN Q1
+image = new SimpleImage("striped-fish-green.jpg");
+back = new SimpleImage("yosemite.jpg");
+back.setSameSize(image);
+
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if (pixel.getGreen() > avg * 1) {
+    x = pixel.getX();
+    y = pixel.getY();
+    pixel2 = back.getPixel(x, y);
+    pixel.setRed(pixel2.getRed());
+    pixel.setGreen(pixel2.getGreen());
+    pixel.setBlue(pixel2.getBlue());
+  }
+}
+print(image);
+
+IMAGE BLUESCREEN Q2
+ge = new SimpleImage("redwood.jpg");
+back = new SimpleImage("pebbles.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if (pixel.getRed() > avg * 1.1) {
+    x = pixel.getX();
+    y = pixel.getY();
+    pixel2 = back.getPixel(x, y);
+    pixel.setRed(pixel2.getRed());
+    pixel.setGreen(pixel2.getGreen());
+    pixel.setBlue(pixel2.getBlue());
+  }
+}
+print(image);
+
+IMAGE BLUESCREEN Q3
+image = new SimpleImage("striped-fish-blue.jpg");
+back = new SimpleImage("paris.jpg");
+back.setSameSize(image);
+
+for (pixel: image) {
+  avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue())/3;
+  if (pixel.getBlue() > avg * .53) {
+    pixel2 = back.getPixel(pixel.getX(), pixel.getY());
+    pixel.setRed(pixel2.getRed());
+    pixel.setGreen(pixel2.getGreen());
+    pixel.setBlue(pixel2.getBlue());
+  }
+}
+
+print(image);
