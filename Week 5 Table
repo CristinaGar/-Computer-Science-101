@@ -1,0 +1,28 @@
+Q1
+Write code to print all the rows where the name starts with "X"
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  // your code here
+  if (row.getField("name").startsWith("X")){
+  print (row); }
+}
+
+Q2
+Write code to print all the rows where the name starts with "Xz"
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  // your code here
+  if(row.getField("name").startsWith("Xz")){
+  print(row);
+  }
+}
+
+Q3
+Write code to print all the rows where the name ends with "x"
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  // your code here
+  if (row.getField("name").endsWith("x")) {
+  print (row);
+  }
+}
